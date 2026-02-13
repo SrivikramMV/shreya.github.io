@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya Chakravorty - Resume</title>
+  <meta name="description" content="Resume page for Shreya Chakravorty with embedded downloadable PDF.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-body">
+
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">SC</a>
+      <div class="nav-controls">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
+        </ul>
+        <div class="theme-switcher" role="group" aria-label="Theme switcher">
+          <button type="button" class="theme-btn" data-theme-option="pink" aria-pressed="false">Pink</button>
+          <button type="button" class="theme-btn" data-theme-option="cream" aria-pressed="true">Cream</button>
+          <button type="button" class="theme-btn" data-theme-option="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <h1 class="hero-name fade-in">Resume</h1>
+        <p class="hero-descriptor fade-in delay-1">View or download Shreya Chakravorty's latest resume.</p>
+
+        <div class="resume-actions fade-in delay-1">
+          <a class="resume-button" href="CVs/ShreyaChakravorty_VertexPlacementCV.pdf" download>Download PDF</a>
+          <a class="resume-button secondary" href="index.html">Back to Portfolio</a>
+        </div>
+
+        <div class="resume-viewer-shell fade-in delay-2">
+          <iframe
+            class="resume-viewer"
+            src="CVs/ShreyaChakravorty_VertexPlacementCV.pdf"
+            title="Shreya Chakravorty Resume"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shreya Chakravorty. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -41,20 +41,20 @@
 }
 
 [data-theme='pink'] {
-  --color-bg: #ffd9e9;
-  --color-bg-warm: #ffc7de;
-  --color-surface: #fff1f8;
-  --color-text: #2b1620;
-  --color-text-secondary: #5c3246;
-  --color-text-tertiary: #8f5a73;
-  --color-accent: #d81b72;
+  --color-bg: #ffc3df;
+  --color-bg-warm: #ffafd4;
+  --color-surface: #ffe8f4;
+  --color-text: #26111c;
+  --color-text-secondary: #552a3f;
+  --color-text-tertiary: #824b66;
+  --color-accent: #e1006d;
   --color-accent-contrast: #fff7fb;
-  --color-border: #e9aeca;
-  --color-border-light: #f3c3da;
-  --color-card-hover: #ffd5e8;
-  --color-selection: #f4a8c9;
-  --color-nav-bg: rgba(255, 217, 233, 0.92);
-  --shadow-elev: 0 10px 30px rgba(183, 31, 103, 0.2), 0 2px 8px rgba(183, 31, 103, 0.12);
+  --color-border: #e58cb7;
+  --color-border-light: #f0b2d0;
+  --color-card-hover: #ffcae3;
+  --color-selection: #ee86b9;
+  --color-nav-bg: rgba(255, 195, 223, 0.93);
+  --shadow-elev: 0 10px 30px rgba(191, 10, 102, 0.22), 0 2px 8px rgba(191, 10, 102, 0.14);
 }
 
 [data-theme='dark'] {
@@ -120,10 +120,11 @@ body {
   max-width: none;
   width: 100%;
   margin: 0;
-  padding: 0 clamp(1.25rem, 3vw, 3rem);
+  padding: 0 1.5rem 0 2rem;
   display: flex;
   align-items: center;
   height: 56px;
+  position: relative;
 }
 
 .nav-logo {
@@ -136,19 +137,24 @@ body {
 }
 
 .nav-controls {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
   align-items: center;
-  gap: clamp(0.75rem, 1.6vw, 1.5rem);
+  gap: 1rem;
   margin-left: clamp(1rem, 2vw, 2rem);
   width: 100%;
+  position: relative;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: var(--space-md);
-  justify-self: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .nav-links a {
@@ -172,6 +178,7 @@ body {
   border-radius: 999px;
   padding: 2px;
   gap: 2px;
+  margin-left: auto;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
@@ -716,7 +723,6 @@ body {
   }
 
   .nav-controls {
-    grid-template-columns: auto auto;
     gap: 0.45rem;
     margin-left: auto;
     width: auto;
@@ -724,7 +730,10 @@ body {
 
   .nav-links {
     gap: var(--space-sm);
-    justify-self: end;
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
   }
 
   .nav-links a {

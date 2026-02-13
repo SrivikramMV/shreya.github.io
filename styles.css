@@ -41,20 +41,20 @@
 }
 
 [data-theme='pink'] {
-  --color-bg: #ffeaf2;
-  --color-bg-warm: #ffdbe9;
-  --color-surface: #fff6fa;
-  --color-text: #2e1a23;
-  --color-text-secondary: #6a4153;
-  --color-text-tertiary: #9d6981;
-  --color-accent: #cf3f82;
+  --color-bg: #ffd9e9;
+  --color-bg-warm: #ffc7de;
+  --color-surface: #fff1f8;
+  --color-text: #2b1620;
+  --color-text-secondary: #5c3246;
+  --color-text-tertiary: #8f5a73;
+  --color-accent: #d81b72;
   --color-accent-contrast: #fff7fb;
-  --color-border: #efbfd4;
-  --color-border-light: #f6d4e3;
-  --color-card-hover: #ffe3ef;
-  --color-selection: #f8bcd8;
-  --color-nav-bg: rgba(255, 234, 242, 0.9);
-  --shadow-elev: 0 8px 26px rgba(174, 47, 112, 0.18), 0 1px 4px rgba(174, 47, 112, 0.1);
+  --color-border: #e9aeca;
+  --color-border-light: #f3c3da;
+  --color-card-hover: #ffd5e8;
+  --color-selection: #f4a8c9;
+  --color-nav-bg: rgba(255, 217, 233, 0.92);
+  --shadow-elev: 0 10px 30px rgba(183, 31, 103, 0.2), 0 2px 8px rgba(183, 31, 103, 0.12);
 }
 
 [data-theme='dark'] {
@@ -117,12 +117,12 @@ body {
 }
 
 .nav-inner {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 var(--space-md);
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 clamp(1.25rem, 3vw, 3rem);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 56px;
 }
 
@@ -136,18 +136,19 @@ body {
 }
 
 .nav-controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: var(--space-sm);
-  margin-left: auto;
-  flex: 1;
-  justify-content: flex-end;
+  gap: clamp(0.75rem, 1.6vw, 1.5rem);
+  margin-left: clamp(1rem, 2vw, 2rem);
+  width: 100%;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: var(--space-md);
+  justify-self: center;
 }
 
 .nav-links a {
@@ -210,10 +211,16 @@ body {
   align-items: center;
 }
 
+.hero .container {
+  max-width: min(1500px, 100%);
+  width: 100%;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+}
+
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(200px, 320px) 1fr;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: clamp(260px, 28vw, 430px) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
 
@@ -227,7 +234,7 @@ body {
 
 .hero-photo {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: clamp(420px, 58vh, 620px);
   object-fit: cover;
   border-radius: 18px;
   border: 1px solid var(--color-border-light);
@@ -709,11 +716,15 @@ body {
   }
 
   .nav-controls {
+    grid-template-columns: auto auto;
     gap: 0.45rem;
+    margin-left: auto;
+    width: auto;
   }
 
   .nav-links {
     gap: var(--space-sm);
+    justify-self: end;
   }
 
   .nav-links a {
@@ -737,7 +748,12 @@ body {
   }
 
   .hero-photo-wrap {
-    max-width: 280px;
+    max-width: 300px;
+  }
+
+  .hero-photo {
+    height: auto;
+    aspect-ratio: 4 / 5;
   }
 
   .section {

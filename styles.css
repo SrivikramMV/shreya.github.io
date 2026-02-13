@@ -41,20 +41,20 @@
 }
 
 [data-theme='pink'] {
-  --color-bg: #fff4f6;
-  --color-bg-warm: #ffe8ee;
-  --color-surface: #fffafb;
-  --color-text: #311d26;
-  --color-text-secondary: #6e4e5b;
-  --color-text-tertiary: #a17c8d;
-  --color-accent: #b14e79;
-  --color-accent-contrast: #fff8fa;
-  --color-border: #e9ccd8;
-  --color-border-light: #f2dbe4;
-  --color-card-hover: #ffeff4;
-  --color-selection: #f0c8d8;
-  --color-nav-bg: rgba(255, 244, 246, 0.88);
-  --shadow-elev: 0 8px 26px rgba(153, 80, 110, 0.14), 0 1px 4px rgba(153, 80, 110, 0.08);
+  --color-bg: #ffeaf2;
+  --color-bg-warm: #ffdbe9;
+  --color-surface: #fff6fa;
+  --color-text: #2e1a23;
+  --color-text-secondary: #6a4153;
+  --color-text-tertiary: #9d6981;
+  --color-accent: #cf3f82;
+  --color-accent-contrast: #fff7fb;
+  --color-border: #efbfd4;
+  --color-border-light: #f6d4e3;
+  --color-card-hover: #ffe3ef;
+  --color-selection: #f8bcd8;
+  --color-nav-bg: rgba(255, 234, 242, 0.9);
+  --shadow-elev: 0 8px 26px rgba(174, 47, 112, 0.18), 0 1px 4px rgba(174, 47, 112, 0.1);
 }
 
 [data-theme='dark'] {
@@ -139,6 +139,9 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
+  margin-left: auto;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -205,6 +208,31 @@ body {
   min-height: 70vh;
   display: flex;
   align-items: center;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(200px, 320px) 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-photo-wrap {
+  width: 100%;
+}
+
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--color-border-light);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-elev);
 }
 
 .hero-name {
@@ -701,6 +729,15 @@ body {
     min-height: 50vh;
     padding-top: calc(56px + var(--space-xl));
     padding-bottom: var(--space-xl);
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero-photo-wrap {
+    max-width: 280px;
   }
 
   .section {

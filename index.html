@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreya Chakravorty - Data Science Postgraduate</title>
+  <meta name="description" content="Personal website of Shreya Chakravorty - Data Science postgraduate with experience in analytics, machine learning, secure software engineering, and dashboard development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Minimal top nav -->
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">SC</a>
+      <div class="nav-controls">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li class="nav-optional"><a href="#education">Education</a></li>
+          <li class="nav-optional"><a href="#contact">Contact</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+        <div class="theme-switcher" role="group" aria-label="Theme switcher">
+          <button type="button" class="theme-btn" data-theme-option="pink" aria-pressed="false">Pink</button>
+          <button type="button" class="theme-btn" data-theme-option="cream" aria-pressed="true">Cream</button>
+          <button type="button" class="theme-btn" data-theme-option="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1 class="hero-name fade-in">Shreya Chakravorty</h1>
+        <p class="hero-descriptor fade-in delay-1">Data Science postgraduate building practical analytics, machine learning, and secure software solutions.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-label fade-in">About</h2>
+        <div class="about-content fade-in delay-1">
+          <p>
+            I am currently pursuing an MSc in Data Science at the University of Surrey after completing a First Class MComp Honours degree in Computer Science at Newcastle University.
+            My work combines data science, full stack engineering, and security-focused development.
+          </p>
+          <p>
+            Across academic and applied projects, I have built machine learning pipelines, interactive dashboards, cloud-native deployments, and secure web systems using Python, SQL, Dash, Flask, Docker, Kubernetes, and Azure.
+          </p>
+          <p>
+            Core skills include Python, Java, Go, C, PHP, JavaScript, Flask, Laravel, Hibernate, Jinja2, MySQL, SQLite, MongoDB, Dash, Plotly, Altair, Matplotlib, Prometheus, and Grafana. I also completed the Data Innovation Bootcamp, ILTHE training, and received a Subject Commendation Award in Computer Science.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-label fade-in">Projects</h2>
+        <div class="project-grid">
+
+          <a href="https://github.com" class="project-card fade-in delay-1" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">01</span>
+            <h3 class="project-title">Streaming Platforms Comparison Dashboard</h3>
+            <p class="project-desc">Built four linked Dash dashboards comparing library size, genres, ratings, and recency across Netflix, Prime Video, Hulu, and Disney+ using merged Kaggle and IMDb data.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-2" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">02</span>
+            <h3 class="project-title">Fake News Detection System</h3>
+            <p class="project-desc">Co-led an 8-person team to build a misinformation pipeline with TF-IDF + Logistic Regression and Ethereum smart-contract logging, with security controls including OAuth2, CSRF protection, sanitisation, and rate-limiting.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-1" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">03</span>
+            <h3 class="project-title">Azure Kubernetes Deployment and Observability</h3>
+            <p class="project-desc">Provisioned and operated a Kubernetes cluster on Azure, containerised services with Docker, and implemented Prometheus + Grafana monitoring to track CPU, memory, latency, and system behavior under load.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-2" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">04</span>
+            <h3 class="project-title">Complex Microbiome Data Visualisation</h3>
+            <p class="project-desc">Created an interactive data visualisation tool with coordinated charts and geographic mapping to explore microbial abundance from the Tara Ocean project with flexible taxonomic and depth filters.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-1" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">05</span>
+            <h3 class="project-title">Comprehensive ML Analysis</h3>
+            <p class="project-desc">Designed end-to-end ML workflows for classification, regression, and NLP with feature engineering, cross-validation, GridSearchCV tuning, and performance evaluation across multiple models.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-2" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">06</span>
+            <h3 class="project-title">Budget Management System</h3>
+            <p class="project-desc">Developed a Flask and SQLite budgeting platform with authentication, personalised calculations, and chart-based financial insights using Jinja2 and Chart.js visualisations.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-1" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">07</span>
+            <h3 class="project-title">Capture-the-Flag Cybersecurity Lab Series</h3>
+            <p class="project-desc">Completed 30+ CTF-style labs focused on cryptography, web exploitation, network forensics, reverse engineering, and vulnerability testing with Kali Linux, Wireshark, Burp Suite, and related tooling.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+          <a href="https://github.com" class="project-card fade-in delay-2" target="_blank" rel="noopener noreferrer">
+            <span class="project-number">08</span>
+            <h3 class="project-title">Lottery Web Application</h3>
+            <p class="project-desc">Built a secure Flask application with validated authentication flows, hashed passwords, MFA support, encrypted sensitive data, and role-based access control for safer account and draw management.</p>
+            <span class="project-link-text">View project &rarr;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section-label fade-in">Experience</h2>
+        <div class="experience-list">
+
+          <article class="experience-entry fade-in delay-1">
+            <div class="experience-meta">
+              <span class="experience-dates">Dec 2024 - Feb 2025</span>
+              <span class="experience-location">United Kingdom</span>
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-role">Software Developer</h3>
+              <p class="experience-company">Quovoy</p>
+              <p class="experience-desc">
+                Performed codebase security analysis and identified 3+ vulnerabilities in input validation, database protection, and CSRF handling. Designed manual and automated test coverage and resolved environment-level issues through systematic debugging.
+              </p>
+            </div>
+          </article>
+
+          <article class="experience-entry fade-in delay-2">
+            <div class="experience-meta">
+              <span class="experience-dates">Sept 2024 - June 2025</span>
+              <span class="experience-location">Newcastle, UK</span>
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-role">Lab Support Assistant (Teaching Assistant)</h3>
+              <p class="experience-company">Newcastle University</p>
+              <p class="experience-desc">
+                Supported stage 1 students in practical sessions on databases and system architecture after ILTHE training. Delivered clear explanations of technical concepts to improve understanding and coursework performance.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education" id="education">
+      <div class="container">
+        <h2 class="section-label fade-in">Education</h2>
+        <div class="education-list">
+
+          <article class="education-entry fade-in delay-1">
+            <div class="education-meta">
+              <span class="education-year">2027</span>
+            </div>
+            <div class="education-body">
+              <h3 class="education-degree">MSc Data Science with Professional Postgraduate Year</h3>
+              <p class="education-school">University of Surrey</p>
+              <p class="education-location">Sept 2025 - Sept 2027</p>
+            </div>
+          </article>
+
+          <article class="education-entry fade-in delay-2">
+            <div class="education-meta">
+              <span class="education-year">2025</span>
+            </div>
+            <div class="education-body">
+              <h3 class="education-degree">MComp Honours Computer Science - First Class</h3>
+              <p class="education-school">Newcastle University</p>
+              <p class="education-location">Sept 2021 - June 2025</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-label fade-in">Get in Touch</h2>
+        <div class="contact-links fade-in delay-2">
+          <a href="mailto:shreyachakravorty30@gmail.com" class="contact-link">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">shreyachakravorty30@gmail.com</span>
+          </a>
+          <a href="tel:+447732147290" class="contact-link">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-value">+44 7732 147290</span>
+          </a>
+          <a href="https://github.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">github.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/shreya-chakravorty-2319b5295" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">linkedin.com/in/shreya-chakravorty-2319b5295</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- "Ask a question" box - fixed at bottom on desktop -->
+  <div class="ask-box" id="ask-box" role="region" aria-label="Ask a question">
+    <div class="ask-box-inner">
+      <!--
+        Experimental feature badge.
+        Signals to users this is a UI preview, not a live AI feature.
+      -->
+      <span class="ask-badge">Experimental</span>
+      <form class="ask-form" id="ask-form" autocomplete="off">
+        <!--
+          Anti-spam considerations (for future backend integration):
+          - Honeypot field below is hidden via CSS; bots that fill it get rejected
+          - Add rate limiting on the server side
+          - Consider adding a CAPTCHA or proof-of-work challenge before enabling real requests
+          - Validate and sanitize all input server-side
+        -->
+        <input type="text" name="hp_field" class="hp-field" tabindex="-1" aria-hidden="true" autocomplete="off">
+        <input
+          type="text"
+          class="ask-input"
+          id="ask-input"
+          placeholder="Ask a question about Shreya's experience..."
+          aria-label="Ask a question about Shreya's experience"
+          maxlength="500"
+        >
+        <button type="submit" class="ask-submit" aria-label="Send question">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+      <div class="ask-response" id="ask-response" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shreya Chakravorty. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

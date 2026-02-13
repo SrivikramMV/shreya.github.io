@@ -41,20 +41,20 @@
 }
 
 [data-theme='pink'] {
-  --color-bg: #ffc3df;
-  --color-bg-warm: #ffafd4;
-  --color-surface: #ffe8f4;
-  --color-text: #26111c;
-  --color-text-secondary: #552a3f;
-  --color-text-tertiary: #824b66;
-  --color-accent: #e1006d;
+  --color-bg: #ffd1e5;
+  --color-bg-warm: #ffc0dc;
+  --color-surface: #ffedf6;
+  --color-text: #2a1420;
+  --color-text-secondary: #5b3145;
+  --color-text-tertiary: #88566d;
+  --color-accent: #d22a78;
   --color-accent-contrast: #fff7fb;
-  --color-border: #e58cb7;
-  --color-border-light: #f0b2d0;
-  --color-card-hover: #ffcae3;
-  --color-selection: #ee86b9;
-  --color-nav-bg: rgba(255, 195, 223, 0.93);
-  --shadow-elev: 0 10px 30px rgba(191, 10, 102, 0.22), 0 2px 8px rgba(191, 10, 102, 0.14);
+  --color-border: #e7a1c3;
+  --color-border-light: #f2bfd7;
+  --color-card-hover: #ffd9ea;
+  --color-selection: #f0a0c7;
+  --color-nav-bg: rgba(255, 209, 229, 0.92);
+  --shadow-elev: 0 10px 30px rgba(179, 35, 107, 0.2), 0 2px 8px rgba(179, 35, 107, 0.12);
 }
 
 [data-theme='dark'] {
